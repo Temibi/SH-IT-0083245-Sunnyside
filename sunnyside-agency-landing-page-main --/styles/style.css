@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header{
+    background-image: url(../img/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    position: relative;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    height: 6rem;
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 8px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.btn{
+    background-color: hsl(0, 0%, 100%);
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    color: var(--white);
+    border-radius: 7rem;
+}
+.transform{
+    display: flex;
+}
+.graphics{
+    display: flex;
+}
+
+.gallery{
+    display: flex;
+}
+
+@media screen and (max-width: 375px){
+    .transform {
+        display: block;
+    } 
+}
+
+.transform_brand {
+    padding: 0 10vw;
+    align-self: center;
+    flex: 0 0 50%;
+}
+
+.transform_text {
+    margin: 32px 0 32px 0;
+}
+.transform_image {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 375px){
+    .transform_image img {
+        background-image: url(../img/mobile/image-transform.jpg);
+    }
+}
+
+
+.transform h1 {
+    font-family: 'Fraunces';
+    color: hsl(212, 27%, 19%);
+}
+
+
+/* the transform button */
+.transform_button button {
+    background-color: #3DBEFF;
+    padding: 0.625rem 1rem 0.625rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    border-color: #3DBEFF;
+    border-width: 2px;
+    font-family: 'Fraunces' sans-serif;
+}
+
+.transform_button button:hover{
+    background-color: #FD6100;
+}
+
+@media screen and (max-width: 375px){
+    .graphics {
+        display: block;
+    }  
+}
+
+.graphics_photography_image {
+    flex: 0 0 50%;
+}
+
+.graphics_image {
+    display: block;
+    width: 100%;
+} 
+
+.graphics_content {
+    margin: 32px 0 32px 0;
+}
+
+.graphics_content {
+    margin-top: -200px;
+}
+
+
+@media screen and (max-width: 375px){
+    .graphics_content  {
+        margin-top: -200;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.graphics_title {
+    font-size: 48px;
+    font-weight:900;
+}
+
+@media screen and (max-width: 375px){
+    .graphics-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 752px){
+    .graphics_title {
+        font-size: 30px;
+    }
+    .graphics_text {
+        font-size: 16px;
+    }
+}
+
+.graphics_text {
+    padding: 0 10vw;
+    color: hsl(210, 23%, 17%);
+}
+
+.gallery-photo {
+    display: flex;
+}
+
+
+@media screen and (max-width: 375px){
+    .gallery-photo {
+        display: block;
+    }
+
+    img.image{
+        width: 100%;
+        height: 50vh;
+    }   
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+
